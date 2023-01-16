@@ -57,7 +57,7 @@ header, footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.q-card::hover{
+.q-card:hover {
     height: 170px;
     width: 310px;;
     background-color: #219ebc;
@@ -97,10 +97,19 @@ button{
     letter-spacing: 0.5px;
     word-spacing: 0.4 em;
     text-transform: uppercase;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #ffb703;
 }
-
-button:hover{
+/* 
+button:hover {
     background-color: #fb8500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+} */
+
+/* Hiding Answers */
+.answer{
+    display: none;
 }
 
 /*Styling Footer with Navbar*/
