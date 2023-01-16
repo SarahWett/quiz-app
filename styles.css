@@ -1,23 +1,16 @@
 /*Resets*/
 *{
-    
     font-family: Corbel, sans-serif;
    margin: 0;
 }
 
 main{
-    grid-column: 1 / -1;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
-/*Grid System SetUp*/
-.grid{
-    display: grid;
-    position: relative;
-    margin: auto;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-columns: repeat(12, 1fr);
-}
+
 
 /*Styling Header*/
 header{
@@ -29,7 +22,7 @@ header{
     line-height: 1.6vh;
     border-bottom:  1px solid #fb8500;
     grid-column: 1 / -1;
-    padding-top: 50px;
+    padding: 50px 0 50px 0;
    color: white;
 }
 
@@ -47,38 +40,71 @@ header, footer {
 
 /*Styling Question-Cards */ 
 .q-cards{
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    display: block;
+    margin: 20px;
 }
 
 .q-card{
-    background-color: #219ebc;
+    display: block;
+    background-color: linear-gradient(#219ebc) ;
     border-radius: 8px;
     height: 150px;
     width: 300px;
+    margin-bottom: 30px;
     padding-bottom: 30px;
     border: 1px solid black;
     border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.q-card::hover{
+    height: 170px;
+    width: 310px;;
+    background-color: #219ebc;
+    color: aliceblue;
+}
+
+/* styling questions */
+h2{
+    padding: 20px;
+    font-weight: 200;  
+    text-align: center;
+    font-size: 120%;
+    color: #023047;
+}
+
+p{
+    text-align: center;
+    line-height: 5.6vh;
 }
 
 #question1{
-    grid-area: 1 / 2;
 }
 
 #question2{
-    border: 1px solid black;
-    grid-area: 2 / 2;
-    border-radius: 8px;
 }
 
 #question3{
-    border: 1px solid black;
-    grid-area: 3 / 2;
-    border-radius: 8px;
+}
+
+/* styling Button */
+button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    word-spacing: 0.4 em;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #fb8500;
 }
 
 /*Styling Footer with Navbar*/
 footer{
     position: fixed;
+    background-color: #023047;
 }
