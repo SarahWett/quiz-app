@@ -1,51 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Users/sw/Documents/Coding/DevelopmentNF/quiz-app/components/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Moon+Dance&family=Ms+Madi&family=Raleway:wght@100&family=Work+Sans:ital,wght@0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Quiz-App</title>
-</head>
+  </head>
 
-<!--Page Content-->
-<body>
-    <header class="main-header">
-        Quizzy-App
+  <!--Page Content-->
+  <body>
+    <header class="header">
+      <h1>Quizzy-App</h1>
     </header>
 
     <!--Question-Cards-Section-->
     <main>
-        <div class="q-cards">
-            <div class="q-card" id="question1">
-                <h2>CSS Flexbox provides us with four layout modes:</h2>
-                <p>block, inline, table and...?</p>
-                <p class="answer">Positioned</p>
-                <button class="button" role="button">show answer</button>
+      <div class="grid-container">
+        <section class="card" data-js="question1">
+          <div class="card_body">
+            <div class="card_title">
+              <h2 class="card_question">
+                CSS Flexbox provides us with four layout modes:
+              </h2>
+              <p class="card_subtitle">block, inline, table and...?</p>
             </div>
-            <div class="q-card" id="question2">
-                <h2>In Flexbox the Parent Element is called..?</h2>
-                <p class="answer">Container</p>
-                <button class="button" role="button">show answer</button>
+          </div>
+          <div class="card_footer">
+            <button data-js="btn1" class="button" role="button">
+              show answer
+            </button>
+            <p class="off" data-js="answer1">Positioned</p>
+            <ul class="tag_list">
+              <li>#html</li>
+              <li>#css</li>
+              <li>#flexbox</li>
+            </ul>
+          </div>
+        </section>
+        <section class="card" data-js="question2">
+          <div class="card_body">
+            <div class="card_title">
+              <h2 class="card_question">
+                In Flexbox the Parent Element is called..?
+              </h2>
             </div>
-            <div class="q-card" id="question3">
-                <h2>In Flexbox the child elements are called..?</h2>
-                <p class="answer">Items</p>
-                <button class="button" role="button">show answer</button>
+            <div class="card_footer">
+              <button data-js="btn2" class="button" role="button">
+                show answer
+              </button>
+              <p class="off" data-js="answer2">Container</p>
+              <ul class="tag_list">
+                <li>#html</li>
+                <li>#css</li>
+                <li>#flexbox</li>
+              </ul>
             </div>
-        </div>
-
+          </div>
+        </section>
+        <section class="card" data-js="question3">
+          <div class="card_body">
+            <h2 class="card_question">
+              In Flexbox the child elements are called..?
+            </h2>
+          </div>
+          <div class="card_footer">
+            <button data-js="btn3" class="button" role="button">
+              show answer
+            </button>
+            <p class="off" data-js="answer3">Items</p>
+            <ul class="tag_list">
+              <li>#html</li>
+              <li>#css</li>
+              <li>#flexbox</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- <img id="svg" src="webdev.svg" alt="woman coding website svg"> -->
     </main>
 
     <!--Footer with Nav Menue-->
     <footer>
-        <nav>
-<a href="#main"></a>
-<a href=""></a>
-<a href=""></a>
-        </nav>
+      <nav>
+        <a href="#main">Home</a>
+        <a href="">Marks</a>
+        <a href="">Profile</a>
+      </nav>
     </footer>
 
-
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

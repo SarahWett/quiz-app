@@ -1,0 +1,30 @@
+/*Styling Header*/
+header{
+    /* display: flex; */
+    /* position: static; */
+    font-weight: 500;
+    font-family: var(--font2);
+    letter-spacing: 2px;
+    word-spacing: 0.6 em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6vh;
+    border-bottom:  1px solid var(--primary);
+    grid-column: 1 / -1;
+    padding: 50px 0 50px 0;
+   color: white;
+   width: 100%;
+}
+
+header::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    font-family: var(--font2);
+    font-size: 160%;
+}
+
+header, footer {
+    text-align: center;
+    background-color: var(--secondary);
+  }
