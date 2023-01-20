@@ -1,1 +1,19 @@
+@import "headerstyles.css";
+@import "cardstyles.css";
+@import "footerstyles.css";
 
+/*Resets*/
+*{
+    font-family: var(--font1);
+   margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+}
