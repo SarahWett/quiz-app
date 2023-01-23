@@ -1,3 +1,23 @@
+/* Styling Card Head / Bookmarks */
+.card-head {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding: 0%;
+}
+
+img[data-js="book_unfilled"] {
+  width: 130%;
+  height: 130%;
+  transform: translate(84px, -15px);
+}
+
+img[data-js="book_filled"] {
+  width: 130%;
+  height: 130%;
+  transform: translate(84px, -15px);
+}
+
 /*Styling Question-Cards */
 .grid-container {
   display: grid;
@@ -62,7 +82,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 4px;
 }
 
 /* styling Button */
@@ -108,7 +127,8 @@ li {
   border: 0.5px solid white;
   padding: 5%;
   border-radius: 10px;
-  background-color: var(--primary);
+  color: whitesmoke;
+  background-color: var(--secondary);
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
