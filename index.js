@@ -17,8 +17,8 @@ const tagList3 = document.querySelector('[data-js="tag_list3"]');
 const bookmark1 = document.querySelector('[data-js="bookmark1"]');
 const bookmark2 = document.querySelector('[data-js="bookmark2"]');
 const bookmark3 = document.querySelector('[data-js="bookmark3"]');
-const bookmarkUnfilled = document.querySelector('[data-js="book_unfilled]');
-const bookmarkFilled = document.querySelector('[data-js="book_filled]');
+const bookmarkUnfilled = document.querySelector('[data-js="book_unfilled"]');
+const bookmarkFilled = document.querySelector('[data-js="book_filled"]');
 
 // Functionality Bookmarks
 // Bookmark1
